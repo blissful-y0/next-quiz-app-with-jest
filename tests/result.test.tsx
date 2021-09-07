@@ -14,3 +14,5 @@ describe("Should render the app without crashing", () => {
     expect(tree).toMatchSnapshot();
   });
 });
+
+afterEach(cleanup);

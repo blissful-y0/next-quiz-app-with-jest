@@ -15,4 +15,22 @@ describe("Should render the app without crashing", () => {
     const tree = renderer.create(<QuizPage />).toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("renders quiz data", async () => {
+    const fakeData = {
+      category: "computer",
+      type: "type",
+      difficulty: "hard",
+      question: "question",
+      correct_answer: "correct",
+      incorrect_answers: ["1", "2", "3"],
+    };
+    jest.spyOn(global, "fetch").mockImplementation(() =>
+      Promise.resolve({
+        json: () => Promise.resolve(fakeData),
+      })
+    );
+  });
 });
+
+afterEach(cleanup);
