@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the app without crashing renders homepage uncahged 1`] = `
+<div
+  className="css-fsuynv"
+>
+  <span
+    className="css-42ocmx"
+  >
+    <span
+      className="css-u5qs1v"
+    />
+    <span
+      className="css-mt367r"
+    />
+  </span>
+</div>
+`;
+
+exports[`Should render the app without crashing renders homepage unchaged 1`] = `
+<div
+  className="css-fsuynv"
+>
+  <span
+    className="css-42ocmx"
+  >
+    <span
+      className="css-u5qs1v"
+    />
+    <span
+      className="css-mt367r"
+    />
+  </span>
+</div>
+`;

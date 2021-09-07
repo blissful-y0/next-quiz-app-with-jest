@@ -19,7 +19,7 @@ const Quiz = () => {
   const { setIsRunning, seconds, setSeconds } = useTimer();
 
   useEffect(() => {
-    fetch(API_URL)
+    const onLoadPage = fetch(API_URL)
       .then((result) => result.json())
       .then((data) => {
         setData(data.results);

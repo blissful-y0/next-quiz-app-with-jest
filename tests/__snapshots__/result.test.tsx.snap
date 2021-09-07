@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the app without crashing renders homepage uncahged 1`] = `
+<div
+  className="css-fsuynv"
+>
+  <div
+    className="css-4udrpq"
+  >
+    
+     님의 결과
+    <div
+      className="css-1k2igav"
+    >
+      <div
+        className="recharts-responsive-container"
+        style={
+          Object {
+            "height": "100%",
+            "maxHeight": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "width": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="css-1ar8wk3"
+    >
+      
+       님의 최종 점수는 
+       / 10입니다! 문제 풀이에 걸린 총 시간은 
+      0초
+      입니다!
+    </div>
+    <h1
+      className="css-1ppnsqm"
+    >
+      오답 노트
+    </h1>
+    <div
+      className="css-1hgjq2u"
+    />
+  </div>
+  <button
+    className="css-1pr2grl"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    처음으로
+  </button>
+</div>
+`;

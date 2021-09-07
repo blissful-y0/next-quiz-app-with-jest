@@ -10,7 +10,7 @@ import {
   IncorrectAnswerThree,
   CorrectAnswer,
 } from "./quiz.style";
-import MoonLoader from "react-spinners/ClipLoader";
+import MoonLoader from "react-spinners/MoonLoader";
 import { IData } from "./quiz.type";
 
 interface IProps {

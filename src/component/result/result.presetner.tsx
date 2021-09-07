@@ -38,9 +38,11 @@ function ResultUI({ answerRatio, time, userName, errorNotes }: IProps) {
           </ResultTextArea>
           <ErrorNotesTitle>오답 노트</ErrorNotesTitle>
           <ErrorNotesContainer>
-            {errorNotes.map((el) => (
+            {errorNotes.map((el, index) => (
               <>
-                <ErrorNoteQuestion>{el?.question}</ErrorNoteQuestion>
+                <ErrorNoteQuestion key={index}>
+                  {el?.question}
+                </ErrorNoteQuestion>
                 <ErrorNoteCorrectAnswer>
                   정답: {el?.correct_answer}
                 </ErrorNoteCorrectAnswer>

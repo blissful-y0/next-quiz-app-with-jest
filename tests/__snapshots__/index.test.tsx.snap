@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the app without crashing renders homepage uncahged 1`] = `
+<div
+  className="css-fsuynv"
+>
+  <div
+    className="css-1kysidv"
+    data-testid="WelcomeToQuiz"
+  >
+    퀴즈의 세계에 오신 것을 환영합니다!
+    <div
+      className="css-2c75tv"
+    >
+      당신의 이름을 입력해 주세요...
+    </div>
+    <input
+      className="css-1q3pav8"
+      onChange={[Function]}
+    />
+    <button
+      className="css-1yny1iv"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      퀴즈 시작하기
+    </button>
+  </div>
+</div>
+`;

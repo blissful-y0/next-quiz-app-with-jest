@@ -15,7 +15,7 @@ interface IProps {
 function MainUI({ onChangeInput }: IProps) {
   return (
     <PageWrapper>
-      <Question>
+      <Question data-testid="WelcomeToQuiz">
         퀴즈의 세계에 오신 것을 환영합니다!
         <TextArea>당신의 이름을 입력해 주세요...</TextArea>
         <UserNameInput onChange={onChangeInput} />
