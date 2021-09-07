@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Simple Quiz Web App with Next.js
 
-## Getting Started
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e4bd35f8-846e-424a-acfb-f1b57170a934/deploy-status)](https://app.netlify.com/sites/zealous-jones-605671/deploys)
 
-First, run the development server:
+https://zealous-jones-605671.netlify.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Next.js - Typescript 기반으로 만든 간단한 퀴즈 어플리케이션입니다. 사용자 이름을 지정하면, 퀴즈 풀이 이후 리포트를 생성할 수 있습니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 사용된 기술 스택
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Typescirpt
+- React.js
+- Next.js
+- Recharts
+- Jest
+- react-spinners
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 시연 GIF
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![quiz-test](https://user-images.githubusercontent.com/71304578/132312095-81e80fee-6b89-4857-80d3-07a34c7a4a7f.gif)
 
-## Learn More
+- 반응형으로 제작했다. 가능한 모바일에서도 대응이 가능하도록 설정했다.
 
-To learn more about Next.js, take a look at the following resources:
+![loader](https://user-images.githubusercontent.com/71304578/132312074-642c46d9-4a53-49b8-b252-42e9d2e15d89.gif)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 실제 서비스처럼 구현하는 것이 목표기 때문에, 가능한 유저 익스피리언스에서 불편함 없도록 로딩을 시각화했다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![result](https://user-images.githubusercontent.com/71304578/132312105-4c5f5015-77ff-4cf6-b725-ab6999baf87f.gif)
 
-## Deploy on Vercel
+- 이후 쿼리스트링으로 유저명을 주소로 넘긴다, 오답노트와 간단한 그래프, 풀이까지 걸린 시간이 나온다.
+- 풀이 시간은 가능한 유저가 실제로 퀴즈를 푸는데 걸리는 시간만 계산하고 싶었기 때문에, 다음 문제로 넘어가는 시간, 버튼 누르는 시간은 제외하고 카운트할 수 있도록 hook을 짰다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 아쉬웠던 점
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- TDD 개발 방식에 흥미는 가지고 있었으나, 함수를 구현하고 이후 함수의 return 값을 테스트하는 것 이외에 컴포넌트에 적용하는 것은 이번이 처음이라 그런지 아직 어떻게 사용해야 하는지 감을 잡기 조금 어려웠다
+- React + Typescript + Jest 조합은 많았으나, Next + TS + Jest는 개발 문서가 적어 세팅부터 헤맸다
+- Custom Hook 테스트를 위해 이것저것 구글링을 해 보았으나, custom hook + setTimeout을 이용한 테스트 방식은 여전히 감 잡기 어렵다...
+- 제출 이후로도 계속 여러가지 시도를 해 볼 생각이다, Jest를 좀 더 공부해 봐야겠다
